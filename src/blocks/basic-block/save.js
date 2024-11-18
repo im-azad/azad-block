@@ -29,6 +29,7 @@ import "./editor.scss";
  *
  * @return {Element} Element to render.
  */
-export default function Edit() {
-	return <p {...useBlockProps()}>{__("Hello from the Edit screen!", "azad-block")}</p>;
+export default function Save() {
+	const blockProps = useBlockProps.save();
+	return <p {...blockProps}>{__("Hello from the Saved content!", "azad-block")}</p>;
 }
