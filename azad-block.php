@@ -27,5 +27,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 function create_block_azad_block_block_init() {
 	register_block_type( __DIR__ . '/build/blocks/basic-block' );
 	register_block_type( __DIR__ . '/build/blocks/test-block' );
+	register_block_type( __DIR__ . '/build/blocks/azad-block-inspector' );
 }
 add_action( 'init', 'create_block_azad_block_block_init' );

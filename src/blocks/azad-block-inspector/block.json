@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "azad-block/azad-block-inspector",
+	"version": "0.1.0",
+	"title": "Azad Inspector controls",
+	"icon": "hammer",
+	"category": "design",
+
+	"attributes": {
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		},
+		"checkboxField": {
+			"type": "boolean",
+			"default": true
+		},
+		"radioField": {
+			"type": "string",
+			"default": "yes"
+		},
+		"textField": {
+			"type": "string"
+		},
+		"toggleField": {
+			"type": "boolean"
+		},
+		"selectField": {
+			"type": "string"
+		}
+	},
+	"textdomain": "azad-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
