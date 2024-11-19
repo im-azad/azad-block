@@ -20,17 +20,17 @@ export default function Save({ attributes }) {
 		selectField,
 	} = attributes;
 	const blockProps = useBlockProps.save();
-
+	console.log("attributes", checkboxField,  toggleField);
 	return (
 		<div { ...blockProps }>
 			<RichText.Content value={ content } tagName="p" />
 
 			<h2>Inspector Control Fields</h2>
 			<ul>
-				<li>Checkbox Field: { checkboxField }</li>
+				<li>Checkbox Field: { checkboxField ? "checked" : "unchecked" }</li>
 				<li>Radio Field: { radioField }</li>
 				<li>Text Field: { textField }</li>
-				<li>Toggle Field: { toggleField }</li>
+				<li>Toggle Field: { toggleField ? "true" : "false" }</li>
 				<li>Select Field: { selectField }</li>
 			</ul>
 		</div>
